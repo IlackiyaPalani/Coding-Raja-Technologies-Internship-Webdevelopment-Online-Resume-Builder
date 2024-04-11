@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Developer Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating responsive and user-friendly websites.</p>
+    </section>
+
+    <section class="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Web Developer at ABC Company (2018 - Present)</li>
+            <li>Freelance Web Developer (2015 - 2018)</li>
+        </ul>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <p>Bachelor's Degree in Computer Science, University XYZ (2015)</p>
+    </section>
+
+    <footer>
+        <button id="toggleContact">Toggle Contact Info</button>
+        <div id="contactInfo" style="display: none;">
+            <p>Contact: john@example.com | Phone: 123-456-7890</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleBtn = document.getElementById('toggleContact');
+            const contactInfo = document.getElementById('contactInfo');
+
+            toggleBtn.addEventListener('click', function() {
+                if (contactInfo.style.display === 'none') {
+                    contactInfo.style.display = 'block';
+                } else {
+                    contactInfo.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
